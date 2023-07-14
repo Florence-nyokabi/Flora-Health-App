@@ -11,6 +11,7 @@ class ActivityLogIn : AppCompatActivity() {
     lateinit var binding: ActivityLogInBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        binding = ActivityLogInBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
     }
@@ -20,9 +21,6 @@ class ActivityLogIn : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnLoggingIn.setOnClickListener {
-            val intent = Intent(this, ActivityHome::class.java)
-            startActivity(intent)
-
             clearLogInErrors()
             validateLogIn()
         }

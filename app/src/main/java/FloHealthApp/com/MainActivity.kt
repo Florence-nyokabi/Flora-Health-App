@@ -18,8 +18,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-
-
             Picasso
                 .get()
                 .load("https://res.cloudinary.com/dyxt6pqtx/image/upload/v1689244598/Flora-splash-image_onp2hx.jpg")
@@ -31,8 +29,6 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, ActivitySignUp::class.java)
             startActivity(intent)
         }
-
-        }
-
     }
+}
 

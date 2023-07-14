@@ -10,6 +10,7 @@ class PersonalInformation : AppCompatActivity() {
     lateinit var binding: ActivityPersonalInformationBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        binding = ActivityPersonalInformationBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
     }

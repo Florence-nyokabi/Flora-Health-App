@@ -22,10 +22,10 @@ class ActivitySignUp : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnSignUp.setOnClickListener {
-            val intent = Intent(this, PersonalInformation::class.java)
-            startActivity(intent)
+
             clearErrors()
             validateSignUp()
+
         }
         binding.btnLogIn.setOnClickListener {
             val intent = Intent(this, ActivityLogIn::class.java)
@@ -66,6 +66,7 @@ class ActivitySignUp : AppCompatActivity() {
             binding.tilPassword.error = "Password must be 8 to 12 characters long"
             error = true
         }
+
         if (createPassword != confirmPassword) {
             binding.tilConfirmPassword.error = "Password and confirmation do not match."
             error = true
