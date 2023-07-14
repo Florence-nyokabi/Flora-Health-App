@@ -1,0 +1,74 @@
+package FloHealthApp.com
+
+import FloHealthApp.com.databinding.ActivityMainBinding
+import FloHealthApp.com.databinding.ActivitySignUpBinding
+import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.Toast
+
+class ActivitySignUp : AppCompatActivity() {
+
+    lateinit var binding: ActivitySignUpBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivitySignUpBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        setContentView(binding.root)
+
+        binding.btnSignUp.setOnClickListener {
+            clearErrors()
+            validateSignUp()
+        }
+    }
+
+    fun validateSignUp(){
+        val firstName = binding.etFirstName.text.toString()
+        val lastName = binding.etLastName.text.toString()
+        val emailAddress = binding.etEmailAddress.text.toString()
+        val createPassword = binding.etPassword.text.toString()
+        val confirmPassword = binding.etConfirmPassword.text.toString()
+
+        var error  = false
+
+        if (firstName.isEmpty()){
+            binding.tilFirstName.error = "Please input first name"
+            error = true
+        }
+        if (lastName.isEmpty()) {
+            binding.tilLastName.error = "Please input last name"
+            error = true
+        }
+        if(emailAddress.isEmpty()){
+            binding.tilEmailAddress.error = "Please input email address"
+            error = true
+        }
+        if (createPassword.isEmpty()){
+            binding.tilPassword.error = "Please create password"
+            error = true
+        }
+        if (confirmPassword.isEmpty()){
+            binding.tilConfirmPassword.error = "Please confirm password created"
+            error = true
+        }
+        if(!error){
+            Toast.makeText(this, "Signed Up Successfully", Toast.LENGTH_SHORT).show()
+            finish()
+            val intent = Intent(this, PersonalInformation::class.java)
+            startActivity(intent)
+        }
+    }
+    fun clearErrors(){
+        binding.tilFirstName.error = null
+        binding.tilLastName.error = null
+        binding.tilEmailAddress.error = null
+        binding.tilPassword.error = null
+        binding.tilConfirmPassword.error = null
+
+    }
+}
