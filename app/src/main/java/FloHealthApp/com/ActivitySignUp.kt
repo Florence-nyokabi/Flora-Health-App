@@ -22,10 +22,8 @@ class ActivitySignUp : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnSignUp.setOnClickListener {
-
             clearErrors()
             validateSignUp()
-
         }
         binding.btnLogIn.setOnClickListener {
             val intent = Intent(this, ActivityLogIn::class.java)
