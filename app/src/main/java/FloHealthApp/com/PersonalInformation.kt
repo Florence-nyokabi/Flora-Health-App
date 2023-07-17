@@ -18,6 +18,8 @@ class PersonalInformation : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         setContentView(binding.root)
+        clearErrors()
+        validatePersonalInformationForm()
         binding.btnNext.setOnClickListener {
             val intent = Intent(this, ActivityHome::class.java)
             startActivity(intent)
@@ -64,6 +66,15 @@ class PersonalInformation : AppCompatActivity() {
             binding.tilPeriodsDays.error = "PLease enter you periods duration"
             error = true
         }
+    }
+    fun clearErrors(){
+        binding.tilAge.error = null
+        binding.tilCycleLength.error = null
+        binding.tilPeriodsDays.error = null
+        binding.tilHeight.error = null
+        binding.tilWeight.error = null
+        binding.tilBloodGroup.error = null
+        binding.tilLastPeriodsDate.error = null
     }
 
 
