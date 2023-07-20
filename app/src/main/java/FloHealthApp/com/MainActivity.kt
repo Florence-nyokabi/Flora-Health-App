@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
             Picasso
                 .get()
-                .load("https://res.cloudinary.com/dyxt6pqtx/image/upload/v1689244598/Flora-splash-image_onp2hx.jpg")
+                .load("https://res.cloudinary.com/dyxt6pqtx/image/upload/v1689856402/Android_Large_-_2_4_tziezo.jpg")
                 .fit()
                 .centerCrop()
                 .into(binding.backgroundImageView)

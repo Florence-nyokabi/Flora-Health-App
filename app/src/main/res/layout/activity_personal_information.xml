@@ -14,6 +14,7 @@
         android:fontFamily="@font/inika"
         android:text="Personal Information"
         android:textColor="#FFFFFF"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,7 +40,8 @@
             android:layout_height="wrap_content"
             android:background="#FFFFFF"
             android:fontFamily="@font/inika"
-            android:hint="Enter your age" />
+            android:hint="Enter your age"
+            android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -61,7 +63,8 @@
             android:layout_height="wrap_content"
             android:background="#FFFFFF"
             android:fontFamily="@font/inika"
-            android:hint="Enter your weight" />
+            android:hint="Enter your weight"
+            android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -83,7 +86,8 @@
             android:layout_height="wrap_content"
             android:background="#0FFFFFFF"
             android:fontFamily="@font/inika"
-            android:hint="Enter your height" />
+            android:hint="Enter your height"
+            android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -105,7 +109,8 @@
             android:layout_height="wrap_content"
             android:background="#FFFFFF"
             android:fontFamily="@font/inika"
-            android:hint="Enter your blood group" />
+            android:hint="Enter your blood group"
+            android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -127,7 +132,8 @@
             android:layout_height="wrap_content"
             android:background="#FFFFFF"
             android:fontFamily="@font/inika"
-            android:hint="Enter last periods date" />
+            android:hint="Enter last periods date"
+            android:inputType="datetime" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -150,7 +156,8 @@
             android:layout_height="wrap_content"
             android:background="#FFFFFF"
             android:fontFamily="@font/inika"
-            android:hint="Enter cycle length" />
+            android:hint="Enter cycle length"
+            android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -172,7 +179,8 @@
             android:layout_height="wrap_content"
             android:background="#FFFFFF"
             android:fontFamily="@font/inika"
-            android:hint="Enter periods days" />
+            android:hint="Enter periods days"
+            android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button

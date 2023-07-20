@@ -18,9 +18,11 @@ class PersonalInformation : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         setContentView(binding.root)
-        clearErrors()
-        validatePersonalInformationForm()
+
+
         binding.btnNext.setOnClickListener {
+            clearErrors()
+            validatePersonalInformationForm()
             val intent = Intent(this, ActivityHome::class.java)
             startActivity(intent)
         }
