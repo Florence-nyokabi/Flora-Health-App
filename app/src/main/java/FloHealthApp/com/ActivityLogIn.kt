@@ -35,15 +35,15 @@ class ActivityLogIn : AppCompatActivity() {
         var error = false
 
         if (userName.isEmpty()){
-            binding.tilUserName.error = "Please input user name"
+            binding.tilUserName.error = "Please input your user name"
             error = true
         }
         if (password.isEmpty()){
-            binding.tilPassword.error = "Please input password"
+            binding.tilPassword.error = "Please input your password"
             error = true
         }
         if(!error){
-            Toast.makeText(this, "Logged In Successfully", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "You've logged In Successfully", Toast.LENGTH_SHORT).show()
             finish()
             val intent = Intent(this, ActivityHome::class.java)
             startActivity(intent)

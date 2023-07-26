@@ -43,7 +43,7 @@ class PersonalInformation : AppCompatActivity() {
            binding.tilAge.error = "Please input age"
            error = true
         }
-//        if (age.)
+
         if (weight.isEmpty()){
             binding.tilWeight.error = "Please input weight"
             error = true
