@@ -1,10 +1,9 @@
-package FloHealthApp.com
+package FloHealthApp.com.ui
 
 import FloHealthApp.com.databinding.ActivityMainBinding
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
 import com.squareup.picasso.Picasso
 
 class MainActivity : AppCompatActivity() {

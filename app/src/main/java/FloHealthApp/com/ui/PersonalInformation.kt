@@ -1,4 +1,4 @@
-package FloHealthApp.com
+package FloHealthApp.com.ui
 
 import FloHealthApp.com.databinding.ActivityPersonalInformationBinding
 import android.content.Intent
@@ -39,32 +39,32 @@ class PersonalInformation : AppCompatActivity() {
 
         var error = false
 
-        if (age.isEmpty()){
+        if (age.isBlank()){
            binding.tilAge.error = "Please input age"
            error = true
         }
 
-        if (weight.isEmpty()){
+        if (weight.isBlank()){
             binding.tilWeight.error = "Please input weight"
             error = true
         }
-        if (height.isEmpty()){
+        if (height.isBlank()){
             binding.tilHeight.error = "Please input height"
             error = true
         }
-        if( bloodgroup.isEmpty()){
+        if( bloodgroup.isBlank()){
             binding.tilBloodGroup.error = "Please enter your blood group"
             error = true
         }
-        if (lastperiodsdate.isEmpty()){
+        if (lastperiodsdate.isBlank()){
             binding.tilLastPeriodsDate.error = "PLease enter your last periods date"
             error = true
         }
-        if (cyclelength.isEmpty()){
+        if (cyclelength.isBlank()){
             binding.tilCycleLength.error = "Please enter your cycle length"
             error = true
         }
-        if (periodsdays.isEmpty()){
+        if (periodsdays.isBlank()){
             binding.tilPeriodsDays.error = "PLease enter you periods duration"
             error = true
         }

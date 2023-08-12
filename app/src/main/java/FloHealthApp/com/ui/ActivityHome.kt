@@ -1,4 +1,4 @@
-package FloHealthApp.com
+package FloHealthApp.com.ui
 
 import FloHealthApp.com.databinding.ActivityHomeBinding
 import androidx.appcompat.app.AppCompatActivity
